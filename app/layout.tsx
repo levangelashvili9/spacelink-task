@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import "@/app/ui/globals.css";
 import StyledComponentsRegistry from "@/app/lib/registry";
 import { inter } from "@/app/ui/fonts";
+import { Navbar } from "./ui/layout/navbar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,9 +17,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <StyledComponentsRegistry>
-        <body className={inter.className}>{children}</body>
-      </StyledComponentsRegistry>
+      <body className={inter.className}>
+        <StyledComponentsRegistry>
+          <Navbar />
+          {children}
+        </StyledComponentsRegistry>
+      </body>
     </html>
   );
 }

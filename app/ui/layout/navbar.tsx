@@ -10,6 +10,7 @@ import {
 } from "./navbar.styled";
 import { navlinks } from "@/app/lib/config";
 import { Button } from "@/app/ui/shared/button";
+import { roboto } from "@/app/ui/fonts";
 
 export const Navbar = () => {
   return (
@@ -20,17 +21,28 @@ export const Navbar = () => {
           alt="itentity hub logo"
           width={163}
           height={32}
+          priority
         />
 
         <NavLinks>
           {navlinks.map((link) => (
-            <NavLink href={link.href} key={link.id}>
+            <NavLink
+              className={roboto.className}
+              href={link.href}
+              key={link.id}
+            >
               {link.name}
             </NavLink>
           ))}
         </NavLinks>
 
-        <Button>Start free trial</Button>
+        <Button
+          width="166"
+          height="48"
+          $borderColor="linear-gradient(to right, #191934, #4b4b66) border-box"
+        >
+          Start free trial
+        </Button>
       </NavbarContent>
     </NavbarContainer>
   );

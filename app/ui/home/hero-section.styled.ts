@@ -84,16 +84,13 @@ export const LoginCard = styled.div<LoginCardProps>`
   gap: 1.25rem;
 
   border-radius: 20px;
-  border: 1px solid transparent;
   backdrop-filter: blur(61.7px);
+  border: 1px solid rgb(44, 45, 71);
   background: linear-gradient(
-        175.36deg,
-        rgba(27, 28, 54, 0.16) 23.98%,
-        rgba(112, 113, 122, 0.16) 65.73%
-      )
-      padding-box,
-    linear-gradient(to right, rgba(44, 45, 71), rgba(68, 74, 226, 0.05))
-      border-box;
+    175.36deg,
+    rgba(27, 28, 54, 0.16) 23.98%,
+    rgba(112, 113, 122, 0.16) 65.73%
+  );
 `;
 
 export const LoginCardImage = styled.div`

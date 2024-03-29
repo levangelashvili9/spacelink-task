@@ -1,7 +1,9 @@
 "use client";
 
 import Image from "next/image";
+
 import { rubik } from "@/app/ui/fonts";
+import { IconMail, IconPerson, IconSecurity } from "@/app/ui/icons";
 
 import {
   HeroContainer,
@@ -23,7 +25,6 @@ import {
 } from "@/app/ui/shared/account-card";
 
 import { Button } from "@/app/ui/shared/button";
-import { IconMail, IconPerson, IconSecurity } from "@/app/ui/icons";
 
 export const Hero = () => {
   return (

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardContainer = styled.div`
+export const TestimonialCardContainer = styled.div`
   padding: 1.375rem 0.75rem;
 
   border-radius: 20px;

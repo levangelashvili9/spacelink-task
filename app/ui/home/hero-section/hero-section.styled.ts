@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { rubik } from "../fonts";
+import { rubik } from "../../fonts";
 
 interface HeroHeadingProps {
   color?: string;

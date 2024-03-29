@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 import {
-  CardContainer,
+  TestimonialCardContainer,
   TestimonialContent,
   TestimonialHeader,
   TestimonialImage,
@@ -21,7 +21,7 @@ type Props = {
 
 export const TestimonialCard: React.FC<Props> = ({ testimonial }) => {
   return (
-    <CardContainer>
+    <TestimonialCardContainer>
       <TestimonialHeader>
         <TestimonialImage>
           <Image
@@ -34,6 +34,6 @@ export const TestimonialCard: React.FC<Props> = ({ testimonial }) => {
         <TestimonialName>{testimonial.name}</TestimonialName>
       </TestimonialHeader>
       <TestimonialContent>{testimonial.text}</TestimonialContent>
-    </CardContainer>
+    </TestimonialCardContainer>
   );
 };

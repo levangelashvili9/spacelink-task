@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { rubik } from "../fonts";
+import { rubik } from "../../fonts";
 
 import {
   Feature,

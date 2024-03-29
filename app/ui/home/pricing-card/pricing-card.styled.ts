@@ -4,18 +4,7 @@ interface PricingCardProps {
   $isRecommended: boolean;
 }
 
-export const PricingSectionContainer = styled.section`
-  padding: 0 10.5rem 7.5rem;
-`;
-
-export const PricingCardsWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.5rem;
-`;
-
-export const PricingCard = styled.div<PricingCardProps>`
+export const PricingCardContainer = styled.div<PricingCardProps>`
   padding: ${(props) =>
     props.$isRecommended ? "5rem 3.25rem 6.75rem" : "3.25rem 3.25rem 5rem"};
   width: 22rem;

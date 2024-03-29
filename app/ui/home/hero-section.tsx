@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { rubik } from "@/app/ui/fonts";
 
 import {
   HeroContainer,
@@ -9,19 +10,22 @@ import {
   HeroMainWrapper,
   ButtonsWrapper,
   SecurityWrapper,
-  LoginCard,
-  LoginCardImage,
-  LoginCardLabel,
-  LoginCardInput,
-  LoginCardTextWrapper,
   EclipseContainer,
+  AbsoluteDiv,
 } from "./hero-section.styled";
+
+import {
+  AccountCard,
+  AccountCardImage,
+  AccountCardInput,
+  AccountCardLabel,
+  AccountCardTextWrapper,
+} from "@/app/ui/shared/account-card";
+
 import { Button } from "@/app/ui/shared/button";
+import { IconMail, IconPerson, IconSecurity } from "@/app/ui/icons";
 
-import { rubik } from "@/app/ui/fonts";
-import { IconMail, IconPerson, IconSecurity } from "../icons";
-
-export const HeroSection = () => {
+export const Hero = () => {
   return (
     <HeroContainer>
       <EclipseContainer>
@@ -61,25 +65,29 @@ export const HeroSection = () => {
       <SecurityWrapper>
         <IconSecurity />
 
-        <LoginCard top="42%" left="-60%">
-          <LoginCardImage>
-            <IconMail />
-          </LoginCardImage>
-          <LoginCardTextWrapper>
-            <LoginCardLabel>Email address</LoginCardLabel>
-            <LoginCardInput>nija@gmail.com</LoginCardInput>
-          </LoginCardTextWrapper>
-        </LoginCard>
+        <AbsoluteDiv top="42%" left="-60%">
+          <AccountCard>
+            <AccountCardImage>
+              <IconMail />
+            </AccountCardImage>
+            <AccountCardTextWrapper>
+              <AccountCardLabel>Email address</AccountCardLabel>
+              <AccountCardInput>nija@gmail.com</AccountCardInput>
+            </AccountCardTextWrapper>
+          </AccountCard>
+        </AbsoluteDiv>
 
-        <LoginCard top="80%" left="-28%">
-          <LoginCardImage>
-            <IconPerson />
-          </LoginCardImage>
-          <LoginCardTextWrapper>
-            <LoginCardLabel>User name</LoginCardLabel>
-            <LoginCardInput>tufayel nija</LoginCardInput>
-          </LoginCardTextWrapper>
-        </LoginCard>
+        <AbsoluteDiv top="80%" left="-28%">
+          <AccountCard>
+            <AccountCardImage>
+              <IconPerson />
+            </AccountCardImage>
+            <AccountCardTextWrapper>
+              <AccountCardLabel>User name</AccountCardLabel>
+              <AccountCardInput>tufayel nija</AccountCardInput>
+            </AccountCardTextWrapper>
+          </AccountCard>
+        </AbsoluteDiv>
       </SecurityWrapper>
     </HeroContainer>
   );

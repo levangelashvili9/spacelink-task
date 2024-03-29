@@ -29,13 +29,15 @@ export const TestimonialsSectionParagraph = styled.p`
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0px;
+
+  text-align: center;
 `;
 
 export const TestimonialsWrapper = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: masonry;
+  align-items: start;
   grid-gap: 10px;
 `;
 

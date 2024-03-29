@@ -30,6 +30,8 @@ export const BenefitsSectionParagraph = styled.p`
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0px;
+
+  text-align: center;
 `;
 
 export const BenefitsWrapper = styled.div`

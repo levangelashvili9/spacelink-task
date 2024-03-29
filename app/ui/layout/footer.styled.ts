@@ -56,6 +56,8 @@ export const FooterSocial = styled.div`
   display: flex;
   align-items: center;
   gap: 0.875rem;
+
+  cursor: pointer;
 `;
 
 export const FooterSocialTitle = styled.div`

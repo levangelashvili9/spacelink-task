@@ -20,7 +20,7 @@ import {
   AccountCardTextWrapper,
 } from "@/components/ui/account-card";
 
-import { accountInfo } from "@/lib/config";
+import { accountInfo } from "@/lib/data";
 
 export const Features = () => {
   return (

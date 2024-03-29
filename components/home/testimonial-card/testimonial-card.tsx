@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import { ITestimonial } from "@/lib/definitions";
+
 import {
   TestimonialCardContainer,
   TestimonialContent,
@@ -11,12 +13,7 @@ import {
 } from "./testimonial-card.styled";
 
 type Props = {
-  testimonial: {
-    id: number;
-    src: string;
-    name: string;
-    text: string;
-  };
+  testimonial: ITestimonial;
 };
 
 export const TestimonialCard: React.FC<Props> = ({ testimonial }) => {

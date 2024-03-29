@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { navlinks } from "@/lib/config";
+import { navlinks } from "@/lib/data";
 import { roboto } from "@/components/fonts";
 
 import {

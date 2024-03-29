@@ -1,6 +1,6 @@
 "use client";
 
-import { pricing } from "@/lib/config";
+import { pricing } from "@/lib/data";
 import { rubik } from "@/components/fonts";
 
 import {

@@ -1,6 +1,6 @@
 "use client";
 
-import { testimonials } from "@/lib/config";
+import { testimonials } from "@/lib/data";
 import { rubik } from "@/components/fonts";
 
 import {

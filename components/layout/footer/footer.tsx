@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import { footerSocials } from "@/lib/config";
+import { footerSocials } from "@/lib/data";
 
 import {
   FooterContainer,

@@ -1,3 +1,5 @@
+import { IPricing } from "@/lib/definitions";
+
 import { IconActiveTick, IconInactiveTick } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 
@@ -13,18 +15,7 @@ import {
 } from "./pricing-card.styled";
 
 type Props = {
-  card: {
-    id: number;
-    isRecommended: boolean;
-    title: string;
-    price: string;
-    features: {
-      id: number;
-      isActive: boolean;
-      title: string;
-    }[];
-    comment: string;
-  };
+  card: IPricing;
 };
 
 export const PricingCard: React.FC<Props> = ({ card }) => {

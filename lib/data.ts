@@ -11,7 +11,15 @@ import {
   IconLinkedin,
 } from "@/components/icons";
 
-export const navlinks = [
+import {
+  IAccountInfo,
+  IFooterSocial,
+  INavlink,
+  IPricing,
+  ITestimonial,
+} from "./definitions";
+
+export const navlinks: INavlink[] = [
   { id: 0, name: "Home", href: "/" },
   { id: 1, name: "Features", href: "/" },
   { id: 2, name: "Pricing", href: "/" },
@@ -19,7 +27,7 @@ export const navlinks = [
   { id: 4, name: "About us", href: "/" },
 ];
 
-export const accountInfo = [
+export const accountInfo: IAccountInfo[] = [
   { id: 0, label: "Username", input: "+1 (456) 453-3456", icon: IconPerson },
   {
     id: 1,
@@ -33,7 +41,7 @@ export const accountInfo = [
   { id: 5, label: "One-time passcode", input: "Kas3345-r32", icon: IconLock },
 ];
 
-export const testimonials = [
+export const testimonials: ITestimonial[] = [
   {
     id: 0,
     name: "Cameron Williamson",
@@ -84,7 +92,7 @@ export const testimonials = [
   },
 ];
 
-export const pricing = [
+export const pricing: IPricing[] = [
   {
     id: 0,
     title: "Start here",
@@ -132,7 +140,7 @@ export const pricing = [
   },
 ];
 
-export const footerSocials = [
+export const footerSocials: IFooterSocial[] = [
   { id: 0, title: "Instagram", icon: IconInstagram },
   {
     id: 1,

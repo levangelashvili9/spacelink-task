@@ -13,7 +13,7 @@ import {
   FooterSocialTitle,
   FooterSocialsWrapper,
 } from "./footer.styled";
-import { IconInstagram, IconLinkedin, IconX, IconYoutube } from "../icons";
+import { footerSocials } from "@/app/lib/config";
 
 export const Footer = () => {
   return (
@@ -58,25 +58,12 @@ export const Footer = () => {
       </FooterMainContent>
 
       <FooterSocialsWrapper>
-        <FooterSocial>
-          <IconInstagram />
-          <FooterSocialTitle>Company</FooterSocialTitle>
-        </FooterSocial>
-
-        <FooterSocial>
-          <IconYoutube />
-          <FooterSocialTitle>Youtube</FooterSocialTitle>
-        </FooterSocial>
-
-        <FooterSocial>
-          <IconX />
-          <FooterSocialTitle>X</FooterSocialTitle>
-        </FooterSocial>
-
-        <FooterSocial>
-          <IconLinkedin />
-          <FooterSocialTitle>LinkedIn</FooterSocialTitle>
-        </FooterSocial>
+        {footerSocials.map((social) => (
+          <FooterSocial key={social.id}>
+            <social.icon />
+            <FooterSocialTitle>{social.title}</FooterSocialTitle>
+          </FooterSocial>
+        ))}
       </FooterSocialsWrapper>
     </FooterContainer>
   );

@@ -5,6 +5,10 @@ import {
   IconCard,
   IconPassword,
   IconLock,
+  IconInstagram,
+  IconYoutube,
+  IconX,
+  IconLinkedin,
 } from "../ui/icons";
 
 export const navlinks = [
@@ -126,4 +130,15 @@ export const pricing = [
     ],
     comment: "Save $23per year",
   },
+];
+
+export const footerSocials = [
+  { id: 0, title: "Instagram", icon: IconInstagram },
+  {
+    id: 1,
+    title: "Youtube",
+    icon: IconYoutube,
+  },
+  { id: 2, title: "X", icon: IconX },
+  { id: 3, title: "Linkedin", icon: IconLinkedin },
 ];

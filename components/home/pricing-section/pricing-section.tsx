@@ -1,7 +1,7 @@
 "use client";
 
-import { pricing } from "@/app/lib/config";
-import { rubik } from "@/app/ui/fonts";
+import { pricing } from "@/lib/config";
+import { rubik } from "@/components/fonts";
 
 import {
   PricingCardsWrapper,
@@ -12,9 +12,9 @@ import {
   SectionHeading,
   SectionHeadingWrapper,
   SectionParagraph,
-} from "@/app/ui/shared/headings";
+} from "@/components/ui/headings";
 
-import { PricingCard } from "../pricing-card";
+import { PricingCard } from "@/components/home/pricing-card";
 
 export const Pricing = () => {
   return (

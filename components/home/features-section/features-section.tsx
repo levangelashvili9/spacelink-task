@@ -18,9 +18,9 @@ import {
   AccountCardInput,
   AccountCardLabel,
   AccountCardTextWrapper,
-} from "@/app/ui/shared/account-card";
+} from "@/components/ui/account-card";
 
-import { accountInfo } from "@/app/lib/config";
+import { accountInfo } from "@/lib/config";
 
 export const Features = () => {
   return (

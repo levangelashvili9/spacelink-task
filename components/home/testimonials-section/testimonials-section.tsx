@@ -1,7 +1,7 @@
 "use client";
 
-import { testimonials } from "@/app/lib/config";
-import { rubik } from "@/app/ui/fonts";
+import { testimonials } from "@/lib/config";
+import { rubik } from "@/components/fonts";
 
 import {
   TestimonialsSectionContainer,
@@ -12,9 +12,9 @@ import {
   SectionHeading,
   SectionHeadingWrapper,
   SectionParagraph,
-} from "@/app/ui/shared/headings";
+} from "@/components/ui/headings";
 
-import { TestimonialCard } from "@/app/ui/home/testimonial-card";
+import { TestimonialCard } from "@/components/home/testimonial-card";
 
 export const Testimonials = () => {
   return (

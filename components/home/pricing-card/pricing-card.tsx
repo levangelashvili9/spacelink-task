@@ -1,5 +1,5 @@
-import { IconActiveTick, IconInactiveTick } from "@/app/ui/icons";
-import { Button } from "@/app/ui/shared/button";
+import { IconActiveTick, IconInactiveTick } from "@/components/icons";
+import { Button } from "@/components/ui/button";
 
 import {
   PricingCardComment,

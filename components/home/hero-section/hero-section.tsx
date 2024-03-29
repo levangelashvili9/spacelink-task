@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 
-import { rubik } from "@/app/ui/fonts";
-import { IconMail, IconPerson, IconSecurity } from "@/app/ui/icons";
+import { rubik } from "@/components/fonts";
+import { IconMail, IconPerson, IconSecurity } from "@/components/icons";
 
 import {
   HeroContainer,
@@ -22,9 +22,9 @@ import {
   AccountCardInput,
   AccountCardLabel,
   AccountCardTextWrapper,
-} from "@/app/ui/shared/account-card";
+} from "@/components/ui/account-card";
 
-import { Button } from "@/app/ui/shared/button";
+import { Button } from "@/components/ui/button";
 
 export const Hero = () => {
   return (

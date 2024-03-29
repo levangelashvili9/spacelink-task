@@ -1,6 +1,9 @@
 "use client";
 
 import Image from "next/image";
+
+import { footerSocials } from "@/lib/config";
+
 import {
   FooterContainer,
   FooterItem,
@@ -13,7 +16,6 @@ import {
   FooterSocialTitle,
   FooterSocialsWrapper,
 } from "./footer.styled";
-import { footerSocials } from "@/app/lib/config";
 
 export const Footer = () => {
   return (

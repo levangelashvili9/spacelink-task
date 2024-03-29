@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 
-import { rubik } from "@/app/ui/fonts";
-import { IconSecurityValidation } from "@/app/ui/icons/IconSecurityValidation";
+import { rubik } from "@/components/fonts";
+import { IconSecurityValidation } from "@/components/icons/IconSecurityValidation";
 
 import {
   BenefitContainer,
@@ -19,7 +19,7 @@ import {
   SectionHeading,
   SectionHeadingWrapper,
   SectionParagraph,
-} from "@/app/ui/shared/headings";
+} from "@/components/ui/headings";
 
 export const Benefits = () => {
   return (

@@ -1,4 +1,10 @@
-import { Benefits, Features, Hero, Testimonials, Pricing } from "./ui/home";
+import {
+  Benefits,
+  Features,
+  Hero,
+  Testimonials,
+  Pricing,
+} from "@/components/home";
 
 export default function Home() {
   return (

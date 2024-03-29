@@ -2,15 +2,17 @@
 
 import Image from "next/image";
 
+import { navlinks } from "@/lib/config";
+import { roboto } from "@/components/fonts";
+
 import {
   NavbarContainer,
   NavbarContent,
   NavLink,
   NavLinks,
 } from "./navbar.styled";
-import { navlinks } from "@/app/lib/config";
-import { Button } from "@/app/ui/shared/button";
-import { roboto } from "@/app/ui/fonts";
+
+import { Button } from "@/components/ui/button";
 
 export const Navbar = () => {
   return (

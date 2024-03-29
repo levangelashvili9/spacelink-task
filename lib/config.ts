@@ -9,7 +9,7 @@ import {
   IconYoutube,
   IconX,
   IconLinkedin,
-} from "../ui/icons";
+} from "@/components/icons";
 
 export const navlinks = [
   { id: 0, name: "Home", href: "/" },

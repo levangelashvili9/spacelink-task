@@ -1,22 +1,20 @@
 "use client";
 
-import Image from "next/image";
-import {
-  TestimonialCard,
-  TestimonialsSectionContainer,
-  TestimonialHeader,
-  TestimonialsWrapper,
-  TestimonialImage,
-  TestimonialName,
-  TestimonialContent,
-} from "./testimonials-section.styled";
 import { testimonials } from "@/app/lib/config";
+import { rubik } from "@/app/ui/fonts";
+
+import {
+  TestimonialsSectionContainer,
+  TestimonialsWrapper,
+} from "./testimonials-section.styled";
+
 import {
   SectionHeading,
   SectionHeadingWrapper,
   SectionParagraph,
-} from "../shared/headings";
-import { rubik } from "../fonts";
+} from "@/app/ui/shared/headings";
+
+import { TestimonialCard } from "@/app/ui/home/testimonial-card";
 
 export const Testimonials = () => {
   return (
@@ -34,20 +32,7 @@ export const Testimonials = () => {
 
       <TestimonialsWrapper>
         {testimonials.map((testimonial) => (
-          <TestimonialCard key={testimonial.id}>
-            <TestimonialHeader>
-              <TestimonialImage>
-                <Image
-                  src={testimonial.src}
-                  alt={`photo of ${testimonial.name}`}
-                  width={36}
-                  height={36}
-                />
-              </TestimonialImage>
-              <TestimonialName>{testimonial.name}</TestimonialName>
-            </TestimonialHeader>
-            <TestimonialContent>{testimonial.text}</TestimonialContent>
-          </TestimonialCard>
+          <TestimonialCard key={testimonial.id} testimonial={testimonial} />
         ))}
       </TestimonialsWrapper>
     </TestimonialsSectionContainer>

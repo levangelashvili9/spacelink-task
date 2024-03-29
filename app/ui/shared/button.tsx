@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
 interface ButtonProps {
-  width: string;
-  height: string;
+  $width: string;
+  $height: string;
   $borderColor?: string;
 }
 
 export const Button = styled.button<ButtonProps>`
-  width: ${(props) => props.width + "px"};
-  height: ${(props) => props.height + "px"};
+  width: ${(props) => props.$width + "px"};
+  height: ${(props) => props.$height + "px"};
 
   color: rgb(202, 209, 233);
   border: 1px solid transparent;

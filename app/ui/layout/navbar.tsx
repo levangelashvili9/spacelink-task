@@ -37,8 +37,8 @@ export const Navbar = () => {
         </NavLinks>
 
         <Button
-          width="166"
-          height="48"
+          $width="166"
+          $height="48"
           $borderColor="linear-gradient(to right, #191934, #4b4b66) border-box"
         >
           Start free trial

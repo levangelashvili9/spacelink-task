@@ -6,8 +6,8 @@ interface HeroHeadingProps {
 }
 
 interface AbsoluteDivProps {
-  top: string;
-  left: string;
+  $top: string;
+  $left: string;
 }
 
 export const HeroContainer = styled.section`
@@ -72,6 +72,6 @@ export const SecurityWrapper = styled.div`
 
 export const AbsoluteDiv = styled.div<AbsoluteDivProps>`
   position: absolute;
-  top: ${(props) => props.top};
-  left: ${(props) => props.left};
+  top: ${(props) => props.$top};
+  left: ${(props) => props.$left};
 `;

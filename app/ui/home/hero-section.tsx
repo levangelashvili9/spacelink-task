@@ -50,13 +50,13 @@ export const Hero = () => {
 
         <ButtonsWrapper>
           <Button
-            width="175"
-            height="48"
+            $width="175"
+            $height="48"
             $borderColor="linear-gradient(to right, #FFAB8F, #FF8EC1, #B67EFD) border-box"
           >
             Start free trial
           </Button>
-          <Button width="175" height="48">
+          <Button $width="175" $height="48">
             How it work
           </Button>
         </ButtonsWrapper>
@@ -65,7 +65,7 @@ export const Hero = () => {
       <SecurityWrapper>
         <IconSecurity />
 
-        <AbsoluteDiv top="42%" left="-60%">
+        <AbsoluteDiv $top="42%" $left="-60%">
           <AccountCard>
             <AccountCardImage>
               <IconMail />
@@ -77,7 +77,7 @@ export const Hero = () => {
           </AccountCard>
         </AbsoluteDiv>
 
-        <AbsoluteDiv top="80%" left="-28%">
+        <AbsoluteDiv $top="80%" $left="-28%">
           <AccountCard>
             <AccountCardImage>
               <IconPerson />

@@ -4,35 +4,6 @@ export const TestimonialsSectionContainer = styled.section`
   padding: 0 7.5rem 10.5rem;
 `;
 
-export const TestimonialsSectionHeadingWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  margin-bottom: 5rem;
-`;
-
-export const TestimonialsSectionHeading = styled.h2`
-  color: rgb(202, 209, 233);
-  font-size: 56px;
-  font-weight: 500;
-  line-height: 62px;
-  letter-spacing: -1px;
-
-  margin-bottom: 1.25rem;
-`;
-
-export const TestimonialsSectionParagraph = styled.p`
-  max-width: 50%;
-  color: rgb(175, 179, 202);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
-
-  text-align: center;
-`;
-
 export const TestimonialsWrapper = styled.div`
   width: 100%;
   display: grid;

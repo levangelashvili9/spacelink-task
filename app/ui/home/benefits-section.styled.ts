@@ -8,32 +8,6 @@ export const BenefitsSectionContainer = styled.section`
   padding: 0 7.5rem 12.125rem;
 `;
 
-export const BenefitsSectionHeadingWrapper = styled.div`
-  text-align: center;
-
-  margin-bottom: 5rem;
-`;
-
-export const BenefitsSectionHeading = styled.h2`
-  color: rgb(202, 209, 233);
-  font-size: 56px;
-  font-weight: 500;
-  line-height: 62px;
-  letter-spacing: -1px;
-
-  margin-bottom: 1.25rem;
-`;
-
-export const BenefitsSectionParagraph = styled.p`
-  color: rgb(175, 179, 202);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0px;
-
-  text-align: center;
-`;
-
 export const BenefitsWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;

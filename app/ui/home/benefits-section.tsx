@@ -2,6 +2,9 @@
 
 import Image from "next/image";
 
+import { rubik } from "@/app/ui/fonts";
+import { IconSecurityValidation } from "@/app/ui/icons/IconSecurityValidation";
+
 import {
   BenefitContainer,
   BenefitHeading,
@@ -9,23 +12,27 @@ import {
   BenefitImage,
   BenefitParagraph,
   BenefitsSectionContainer,
-  BenefitsSectionHeading,
-  BenefitsSectionHeadingWrapper,
-  BenefitsSectionParagraph,
   BenefitsWrapper,
 } from "./benefits-section.styled";
-import { IconSecurityValidation } from "../icons/IconSecurityValidation";
+
+import {
+  SectionHeading,
+  SectionHeadingWrapper,
+  SectionParagraph,
+} from "@/app/ui/shared/headings";
 
 export const Benefits = () => {
   return (
     <BenefitsSectionContainer>
-      <BenefitsSectionHeadingWrapper>
-        <BenefitsSectionHeading>Why choose us</BenefitsSectionHeading>
-        <BenefitsSectionParagraph>
+      <SectionHeadingWrapper>
+        <SectionHeading className={rubik.className}>
+          Why choose us
+        </SectionHeading>
+        <SectionParagraph>
           We are the only service that provides all 3 services as a packaged
           service
-        </BenefitsSectionParagraph>
-      </BenefitsSectionHeadingWrapper>
+        </SectionParagraph>
+      </SectionHeadingWrapper>
 
       <BenefitsWrapper>
         <BenefitContainer>

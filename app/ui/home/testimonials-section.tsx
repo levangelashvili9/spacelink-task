@@ -4,9 +4,6 @@ import Image from "next/image";
 import {
   TestimonialCard,
   TestimonialsSectionContainer,
-  TestimonialsSectionHeading,
-  TestimonialsSectionHeadingWrapper,
-  TestimonialsSectionParagraph,
   TestimonialHeader,
   TestimonialsWrapper,
   TestimonialImage,
@@ -14,20 +11,26 @@ import {
   TestimonialContent,
 } from "./testimonials-section.styled";
 import { testimonials } from "@/app/lib/config";
+import {
+  SectionHeading,
+  SectionHeadingWrapper,
+  SectionParagraph,
+} from "../shared/headings";
+import { rubik } from "../fonts";
 
 export const Testimonials = () => {
   return (
     <TestimonialsSectionContainer>
-      <TestimonialsSectionHeadingWrapper>
-        <TestimonialsSectionHeading>
+      <SectionHeadingWrapper>
+        <SectionHeading className={rubik.className}>
           The word on IdentityHub
-        </TestimonialsSectionHeading>
-        <TestimonialsSectionParagraph>
+        </SectionHeading>
+        <SectionParagraph>
           Forget about spam, advertising mailings, hacking and attacking robots.
           Keep your real mailbox clean and secure. Temp Mail provides temporary,
           secure, anonymous, free, disposable email address.
-        </TestimonialsSectionParagraph>
-      </TestimonialsSectionHeadingWrapper>
+        </SectionParagraph>
+      </SectionHeadingWrapper>
 
       <TestimonialsWrapper>
         {testimonials.map((testimonial) => (

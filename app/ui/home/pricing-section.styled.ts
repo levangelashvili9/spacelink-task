@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface PricingCardProps {
-  isRecommended: boolean;
+  $isRecommended: boolean;
 }
 
 export const PricingSectionContainer = styled.section`
@@ -46,7 +46,7 @@ export const PricingCardsWrapper = styled.div`
 
 export const PricingCard = styled.div<PricingCardProps>`
   padding: ${(props) =>
-    props.isRecommended ? "5rem 3.25rem 6.75rem" : "3.25rem 3.25rem 5rem"};
+    props.$isRecommended ? "5rem 3.25rem 6.75rem" : "3.25rem 3.25rem 5rem"};
   width: 22rem;
 
   display: flex;

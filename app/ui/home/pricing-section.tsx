@@ -32,7 +32,7 @@ export const Pricing = () => {
 
       <PricingCardsWrapper>
         {pricing.map((card) => (
-          <PricingCard key={card.id} isRecommended={card.isRecommended}>
+          <PricingCard key={card.id} $isRecommended={card.isRecommended}>
             <PricingCardTitle>{card.title}</PricingCardTitle>
             <PricingCardPrice>${card.price}</PricingCardPrice>
             <PricingCardDuration>Per month</PricingCardDuration>

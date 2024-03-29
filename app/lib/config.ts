@@ -28,3 +28,54 @@ export const accountInfo = [
   { id: 4, label: "Password", input: "Kas3345-r32", icon: IconPassword },
   { id: 5, label: "One-time passcode", input: "Kas3345-r32", icon: IconLock },
 ];
+
+export const testimonials = [
+  {
+    id: 0,
+    name: "Cameron Williamson",
+    text: "Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.",
+    src: "/images/cameron-williamson.png",
+  },
+  {
+    id: 1,
+    name: "Leslie Alexander",
+    text: "Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address. Stalkers and disgruntled acquaintances use the Internet to find addresses, phone numbers and other personal details about their targets. Identity thieves use personal information.",
+    src: "/images/cameron-williamson.png",
+  },
+  {
+    id: 2,
+    name: "Guy Hawkins",
+    text: "Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address. Identity thieves use personal information found online to impersonate their.",
+    src: "/images/cameron-williamson.png",
+  },
+  {
+    id: 3,
+    name: "Brooklyn Simmons",
+    text: "Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.",
+    src: "/images/cameron-williamson.png",
+  },
+  {
+    id: 4,
+    name: "Darrell Steward",
+    text: "Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.",
+    src: "/images/cameron-williamson.png",
+  },
+  {
+    id: 5,
+    name: "Floyd Miles",
+    text: "Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.",
+    src: "/images/cameron-williamson.png",
+  },
+  {
+    id: 6,
+    name: "Savannah Nguyen",
+    text: "Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.",
+    src: "/images/cameron-williamson.png",
+  },
+  {
+    id: 7,
+    name: "Cody Fisher",
+    text: "Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.",
+    src: "/images/cameron-williamson.png",
+  },
+];

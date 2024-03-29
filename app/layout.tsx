@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "@/app/ui/globals.css";
 import StyledComponentsRegistry from "@/app/lib/registry";
 import { inter } from "@/app/ui/fonts";
-import { Navbar } from "./ui/layout/navbar";
+import { Navbar, Footer } from "./ui/layout";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -21,6 +21,7 @@ export default function RootLayout({
         <StyledComponentsRegistry>
           <Navbar />
           {children}
+          <Footer />
         </StyledComponentsRegistry>
       </body>
     </html>

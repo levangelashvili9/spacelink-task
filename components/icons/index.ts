@@ -11,3 +11,4 @@ export { IconInstagram } from "./IconInstagram";
 export { IconYoutube } from "./IconYoutube";
 export { IconX } from "./IconX";
 export { IconLinkedin } from "./IconLinkedin";
+export { IconBurgerMenu } from "./IconBurgerMenu";

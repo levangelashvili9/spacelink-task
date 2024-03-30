@@ -14,6 +14,7 @@ import {
   SecurityWrapper,
   EclipseContainer,
   AbsoluteDiv,
+  IconSecurityContainer,
 } from "./hero-section.styled";
 
 import {
@@ -64,7 +65,9 @@ export const Hero = () => {
       </HeroMainWrapper>
 
       <SecurityWrapper>
-        <IconSecurity />
+        <IconSecurityContainer>
+          <IconSecurity />
+        </IconSecurityContainer>
 
         <AbsoluteDiv $top="42%" $left="-60%">
           <AccountCard>

@@ -10,6 +10,9 @@ import {
   FeaturePreview,
   FeatureTextWrapper,
   FeaturesContainer,
+  PrivateInfoImageContainer,
+  StyledImage,
+  SupportImageContainer,
 } from "./features-section.styled";
 
 import {
@@ -44,12 +47,14 @@ export const Features = () => {
           </FeatureParagraph>
         </FeatureTextWrapper>
         <FeaturePreview>
-          <Image
-            src="/images/features-1.png"
-            alt="cards"
-            width={598}
-            height={439}
-          />
+          <PrivateInfoImageContainer>
+            <StyledImage
+              src="/images/features-1.png"
+              alt="cards"
+              width={598}
+              height={439}
+            />
+          </PrivateInfoImageContainer>
         </FeaturePreview>
       </Feature>
 
@@ -91,12 +96,14 @@ export const Features = () => {
           </FeatureParagraph>
         </FeatureTextWrapper>
         <FeaturePreview>
-          <Image
-            src="/images/features-2.png"
-            alt="cards"
-            width={524}
-            height={293}
-          />
+          <SupportImageContainer>
+            <StyledImage
+              src="/images/features-2.png"
+              alt="cards"
+              width={524}
+              height={293}
+            />
+          </SupportImageContainer>
         </FeaturePreview>
       </Feature>
     </FeaturesContainer>

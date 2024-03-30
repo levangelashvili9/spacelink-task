@@ -5,8 +5,7 @@ interface PricingCardProps {
 }
 
 export const PricingCardContainer = styled.div<PricingCardProps>`
-  padding: ${(props) =>
-    props.$isRecommended ? "5rem 3.25rem 6.75rem" : "3.25rem 3.25rem 5rem"};
+  padding: 3.25rem 3.25rem 5rem;
   width: 22rem;
 
   display: flex;
@@ -20,6 +19,16 @@ export const PricingCardContainer = styled.div<PricingCardProps>`
     rgba(27, 28, 54, 0.16) 1.294%,
     rgba(112, 113, 122, 0.16) 73.861%
   );
+
+  border: 2px solid transparent;
+
+  @media (min-width: 1232px) {
+    padding: ${(props) =>
+      props.$isRecommended ? "5rem 3.25rem 6.75rem" : "3.25rem 3.25rem 5rem"};
+
+    border: 2px solid
+      ${(props) => (props.$isRecommended ? "#F088D2" : "transparent")};
+  }
 `;
 
 export const PricingCardTitle = styled.h3`

@@ -10,16 +10,22 @@ export const SectionHeadingWrapper = styled.div`
 
 export const SectionHeading = styled.h2`
   color: rgb(202, 209, 233);
-  font-size: 56px;
+  font-size: 32px;
   font-weight: 500;
-  line-height: 62px;
-  letter-spacing: -1px;
 
   margin-bottom: 1.25rem;
+
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 56px;
+    line-height: 62px;
+    letter-spacing: -1px;
+  }
 `;
 
 export const SectionParagraph = styled.p`
-  max-width: 50%;
+  max-width: 100%;
   color: rgb(175, 179, 202);
   font-size: 16px;
   font-weight: 400;
@@ -27,4 +33,8 @@ export const SectionParagraph = styled.p`
   letter-spacing: 0px;
 
   text-align: center;
+
+  @media (min-width: 768px) {
+    max-width: 50%;
+  }
 `;

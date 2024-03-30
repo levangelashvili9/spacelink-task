@@ -13,8 +13,12 @@ import {
 } from "./navbar.styled";
 
 import { Button } from "@/components/ui/button";
+import useWindowSize from "@/hooks/useWindowSize";
+import { IconBurgerMenu } from "@/components/icons";
 
 export const Navbar = () => {
+  const { width } = useWindowSize();
+
   return (
     <NavbarContainer>
       <NavbarContent>
@@ -26,25 +30,31 @@ export const Navbar = () => {
           priority
         />
 
-        <NavLinks>
-          {navlinks.map((link) => (
-            <NavLink
-              className={roboto.className}
-              href={link.href}
-              key={link.id}
-            >
-              {link.name}
-            </NavLink>
-          ))}
-        </NavLinks>
+        {width <= 1024 ? (
+          <IconBurgerMenu />
+        ) : (
+          <>
+            <NavLinks>
+              {navlinks.map((link) => (
+                <NavLink
+                  className={roboto.className}
+                  href={link.href}
+                  key={link.id}
+                >
+                  {link.name}
+                </NavLink>
+              ))}
+            </NavLinks>
 
-        <Button
-          $width="166"
-          $height="48"
-          $borderColor="linear-gradient(to right, #191934, #4b4b66) border-box"
-        >
-          Start free trial
-        </Button>
+            <Button
+              $width="166"
+              $height="48"
+              $borderColor="linear-gradient(to right, #191934, #4b4b66) border-box"
+            >
+              Start free trial
+            </Button>
+          </>
+        )}
       </NavbarContent>
     </NavbarContainer>
   );

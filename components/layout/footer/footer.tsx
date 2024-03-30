@@ -15,13 +15,14 @@ import {
   FooterSocial,
   FooterSocialTitle,
   FooterSocialsWrapper,
+  StyledImage,
 } from "./footer.styled";
 
 export const Footer = () => {
   return (
     <FooterContainer>
       <FooterMainContent>
-        <Image
+        <StyledImage
           src="/images/identity-hub-logo.png"
           alt="itentity hub logo"
           width={163}

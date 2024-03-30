@@ -6,6 +6,10 @@ import { rubik } from "@/components/fonts";
 import {
   PricingCardsWrapper,
   PricingSectionContainer,
+  PricingSwitch,
+  PricingSwitchActive,
+  PricingSwitchInactive,
+  PricingSwitchWrapper,
 } from "./pricing-section.styled";
 
 import {
@@ -26,6 +30,13 @@ export const Pricing = () => {
           justify managing their data or you start settings things.
         </SectionParagraph>
       </SectionHeadingWrapper>
+
+      <PricingSwitchWrapper>
+        <PricingSwitch>
+          <PricingSwitchActive>Billed yearly -20%</PricingSwitchActive>
+          <PricingSwitchInactive>Billed monthly</PricingSwitchInactive>
+        </PricingSwitch>
+      </PricingSwitchWrapper>
 
       <PricingCardsWrapper>
         {pricing.map((card) => (

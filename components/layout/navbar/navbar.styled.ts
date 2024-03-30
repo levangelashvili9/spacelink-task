@@ -5,7 +5,7 @@ import Link from "next/link";
 export const NavbarContainer = styled.header`
   width: 100%;
   height: 5.375rem;
-  padding-bottom: 0.25rem;
+  padding: 0 2rem 0.25rem;
 
   position: fixed;
   top: 0;
@@ -18,6 +18,14 @@ export const NavbarContainer = styled.header`
   background: #050520;
   border: 1px solid rgb(31, 32, 53);
   border-radius: 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 3rem 0.25rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 0 0 0.25rem;
+  }
 `;
 
 export const NavbarContent = styled.div`
@@ -25,7 +33,11 @@ export const NavbarContent = styled.div`
 
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+
+  @media (min-width: 1024px) {
+    justify-content: space-evenly;
+  }
 `;
 
 export const NavLinks = styled.ul`

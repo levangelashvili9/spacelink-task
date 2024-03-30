@@ -9,10 +9,12 @@ import {
   BenefitContainer,
   BenefitHeading,
   BenefitHeadingWrapper,
+  BenefitImageWrapper,
   BenefitImage,
   BenefitParagraph,
   BenefitsSectionContainer,
   BenefitsWrapper,
+  StyledImage,
 } from "./benefits-section.styled";
 
 import {
@@ -44,14 +46,16 @@ export const Benefits = () => {
               any manual activities.
             </BenefitParagraph>
           </BenefitHeadingWrapper>
-          <BenefitImage>
-            <Image
-              src="/images/benefits-1.png"
-              alt="benefits card"
-              width={520}
-              height={252}
-            />
-          </BenefitImage>
+          <BenefitImageWrapper>
+            <BenefitImage>
+              <StyledImage
+                src="/images/benefits-1.png"
+                alt="benefits card"
+                width={520}
+                height={252}
+              />
+            </BenefitImage>
+          </BenefitImageWrapper>
         </BenefitContainer>
 
         <BenefitContainer>
@@ -64,14 +68,16 @@ export const Benefits = () => {
             </BenefitParagraph>
           </BenefitHeadingWrapper>
           <IconSecurityValidation />
-          <BenefitImage>
-            <Image
-              src="/images/benefits-2.png"
-              alt="benefits card"
-              width={484}
-              height={108}
-            />
-          </BenefitImage>
+          <BenefitImageWrapper>
+            <BenefitImage>
+              <StyledImage
+                src="/images/benefits-2.png"
+                alt="benefits card"
+                width={484}
+                height={108}
+              />
+            </BenefitImage>
+          </BenefitImageWrapper>
         </BenefitContainer>
 
         <BenefitContainer $variant="full">
@@ -83,14 +89,16 @@ export const Benefits = () => {
               will send you an alert.
             </BenefitParagraph>
           </BenefitHeadingWrapper>
-          <BenefitImage>
-            <Image
-              src="/images/benefits-3.png"
-              alt="benefits card"
-              width={484}
-              height={195}
-            />
-          </BenefitImage>
+          <BenefitImageWrapper>
+            <BenefitImage>
+              <StyledImage
+                src="/images/benefits-3.png"
+                alt="benefits card"
+                width={484}
+                height={195}
+              />
+            </BenefitImage>
+          </BenefitImageWrapper>
         </BenefitContainer>
       </BenefitsWrapper>
     </BenefitsSectionContainer>

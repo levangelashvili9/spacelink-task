@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export const NavbarContainer = styled.header`
   width: 100%;
@@ -39,6 +40,10 @@ export const NavbarContent = styled.div`
   @media (min-width: 1024px) {
     justify-content: space-evenly;
   }
+`;
+
+export const StyledImage = styled(Image)`
+  cursor: pointer;
 `;
 
 export const NavLinks = styled.ul`

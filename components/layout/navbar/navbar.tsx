@@ -1,6 +1,7 @@
 "use client";
 
-import Image from "next/image";
+import { useRouter } from "next/navigation";
+import useWindowSize from "@/hooks/useWindowSize";
 
 import { navlinks } from "@/lib/data";
 import { roboto } from "@/components/fonts";
@@ -10,19 +11,25 @@ import {
   NavbarContent,
   NavLink,
   NavLinks,
+  StyledImage,
 } from "./navbar.styled";
 
 import { Button } from "@/components/ui/button";
-import useWindowSize from "@/hooks/useWindowSize";
 import { IconBurgerMenu } from "@/components/icons";
 
 export const Navbar = () => {
+  const router = useRouter();
   const { width } = useWindowSize();
+
+  const onNavigateToHome = () => {
+    router.push("/");
+  };
 
   return (
     <NavbarContainer>
       <NavbarContent>
-        <Image
+        <StyledImage
+          onClick={onNavigateToHome}
           src="/images/identity-hub-logo.png"
           alt="itentity hub logo"
           width={163}

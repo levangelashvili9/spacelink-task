@@ -63,6 +63,10 @@ export const FooterItemLink = styled.h4`
   letter-spacing: 0.21px;
 
   cursor: pointer;
+
+  &:hover {
+    color: rgba(202, 209, 233, 1);
+  }
 `;
 
 export const FooterSocialsWrapper = styled.div`
@@ -88,4 +92,8 @@ export const FooterSocialTitle = styled.div`
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0.21px;
+
+  &:hover {
+    color: rgba(202, 209, 233, 0.7);
+  }
 `;

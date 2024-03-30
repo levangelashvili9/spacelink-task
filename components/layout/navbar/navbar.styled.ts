@@ -56,4 +56,8 @@ export const NavLink = styled(Link)`
   line-height: 20px;
 
   text-decoration: none;
+
+  &:hover {
+    color: rgba(202, 209, 233, 0.7);
+  }
 `;

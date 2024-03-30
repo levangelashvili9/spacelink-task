@@ -22,4 +22,10 @@ export const Button = styled.button<ButtonProps>`
   letter-spacing: -0.5px;
 
   cursor: pointer;
+
+  transition: all 0.2s;
+
+  &:hover {
+    color: rgba(202, 209, 233, 0.7);
+  }
 `;

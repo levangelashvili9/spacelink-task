@@ -1,6 +1,6 @@
 ### Overview
 
-This project is a web page built using Next.js and styled-components, primarily focusing on CSS for styling. It serves as a dynamic and responsive platform
+This project is a web page built using Next.js and styled-components, primarily focusing on CSS for styling. It serves as a dynamic and responsive platform.
 
 ### Links
 
